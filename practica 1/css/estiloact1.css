@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6b4683;
+    padding: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+main {
+    display: flex;
+    border: 2px solid black;
+    background-color: #7d529a;
+    color: white;
+}
+
+#menu {
+    width: 22%;
+    padding: 20px;
+    border-right: 2px solid black;
+}
+
+#menu h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#menu ol {
+    padding-left: 20px;
+}
+
+#menu li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#contenido {
+    width: 78%;
+    padding: 15px;
+}
+
+.renglon {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.cuadro {
+    width: 25%;
+    height: 140px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: #7d529a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    overflow: hidden;
+}
+
+.Gradiente {
+    background: linear-gradient(to bottom, #ffffff, #00e5ff);
+}
+
+.imagen_css {
+    background-image: url('../imag/berserk.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Caja especial de texto + imagen */
+.texto_imagen {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+}
+
+.texto_imagen p {
+    width: 60%;
+    text-align: left;
+}
+
+footer {
+    margin-top: 15px;
+    border: 2px solid black;
+    background-color: #7d529a;
+    color: white;
+    display: flex;
+}
+
+.col_footer {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col_izq {
+    width: 22%;
+    border-right: 2px solid black;
+    gap: 15px;
+}
+
+.col_derecha {
+    width: 78%;
+    justify-content: space-between;
+}
+
+.col_derecha a {
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+.opciones {
+    display: flex;
+    gap: 35px;
+}
+.texto_imagen {
+    background-color: #00e5ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 8px;
+}
+.texto_imagen img {
+    width: 40%;
+    height: 80px;
+    object-fit: cover;
+}
