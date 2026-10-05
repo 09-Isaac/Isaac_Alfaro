@@ -1,0 +1,219 @@
+/* Estilos básicos */
+body{
+    background-color: #171717;
+    color: #F5F5F5;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+
+
+/* Estilo del menú */
+header{
+    background-color: #242424;
+    color: #F5F5F5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 22%;
+    height: calc(100vh - 65px);
+    border-right: 2px solid #B91C1C;
+}
+
+nav{
+    background-color: #242424;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    width: 100%;
+}
+
+nav li a{
+    display: block;
+    color: #F5F5F5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 25px;
+}
+
+nav li a:hover{
+    background-color: #B91C1C;
+    color: #F59E0B;
+}
+
+
+/* Contenido */
+main{
+    margin-left: 22%;
+    width: 78%;
+    height: calc(100vh - 65px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Caja principal */
+#principal{
+    width: 100%;
+    height: 100%;
+}
+
+#principal > article{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Formulario */
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Caja de datos */
+fieldset{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 3px #B91C1C double;
+    background-color: #242424;
+    padding: 25px;
+}
+
+legend{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #F59E0B;
+    text-align: center;
+}
+
+label{
+    font-weight: bolder;
+    margin: 10px;
+    color: #EF4444;
+}
+
+
+/* Nombre y edad */
+#nombre_edad{
+    display: flex;
+    flex-direction: row;
+}
+
+#nombre_edad article{
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+}
+
+
+/* Género y trayectoria */
+#genero_trayectoria{
+    display: flex;
+    flex-direction: row;
+}
+
+#genero_trayectoria article{
+    width: 50%;
+    padding: 10px;
+}
+
+
+/* Campos */
+input[type="text"],
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #171717;
+    color: #F5F5F5;
+    border: 2px solid #EF4444;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus{
+    outline: none;
+    border-color: #F59E0B;
+}
+
+
+/* Género */
+input[type="radio"]{
+    margin-left: 10px;
+}
+
+
+/* Foto */
+#foto_cantante{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+#archivo{
+    width: 100%;
+    padding: 10px;
+}
+
+#foto{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #171717;
+    color: #F5F5F5;
+    border: 2px solid #EF4444;
+}
+
+
+/* Botón */
+#boton{
+    background-color: #F59E0B;
+    color: #171717;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#boton:hover{
+    background-color: #B91C1C;
+    color: #F5F5F5;
+}
+
+
+/* Footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #B91C1C;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+
+footer p{
+    margin: 0;
+}

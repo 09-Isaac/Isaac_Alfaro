@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isaac Alfaro">
+    <meta name="keywords" content="música, canciones, artistas">
+    <link rel="stylesheet" href="css/disco.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Formulario de Música</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_parent">Home</a></li>
+                <li><a href="Cantante.html" target="_parent">Cantante</a></li>
+                <li><a href="Canción .html" target="_parent">Canción</a></li>
+                <li><a href="Playlist.html" target="_parent">Playlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="principal">
+            <article>
+                <form name="frmMusica" id="frmMusica">
+                    <fieldset id="datos_musica">
+                        <legend>Datos:</legend>
+                        <section id="nombre_completo">
+                            <article>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre">
+                            </article>
+                            <article>
+                                <label for="artista">Artista:</label>
+                                <input type="text" id="artista" name="artista">
+                            </article>
+                        </section>
+
+                        <section id="otros_datos">
+                            <article>
+                                <label for="genero">Género favorito:</label>
+                                <select name="genero" id="genero">
+                                    <option value="reggaeton">Reggaetón</option>
+                                    <option value="rap">Rap</option>
+                                    <option value="corridos">Corridos</option>
+                                    <option value="trap">Trap</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="electronica">Electrónica</option>
+                                </select>
+                            </article>
+                            <article>
+                                <label for="precio">Precio:</label>
+                                <input type="text" id="precio" name="precio">
+                            </article>
+                        </section>
+
+                        <section id="foto_musica">
+                            <article id="archivo">
+                                <label for="foto">Foto:</label>
+                                <input
+                                    type="file"
+                                    id="foto"
+                                    name="foto">
+                            </article>
+                        </section>
+                    </fieldset>
+                    <button type="button" id="boton" onclick="mi_metodo()">
+                        Registrar
+                    </button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>LSDM401</p>
+        <p>Isaac Alfaro</p>
+    </footer>
+    <script src="js/confirmado.js"></script>
+</body>
+</html>

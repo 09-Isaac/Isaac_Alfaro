@@ -1,0 +1,177 @@
+/* Estilos básicos */
+body{
+    background-color: #1A1423;
+    color: #F5F3FF;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+
+
+/* Estilo del menú */
+header{
+    background-color: #291B35;
+    color: #F5F3FF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 22%;
+    height: calc(100vh - 65px);
+    border-right: 2px solid #8B5CF6;
+}
+
+nav{
+    background-color: #291B35;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    width: 100%;
+}
+
+nav li a{
+    display: block;
+    color: #F5F3FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 25px;
+}
+
+nav li a:hover{
+    background-color: #8B5CF6;
+    color: #FDBA74;
+}
+
+
+/* Contenido */
+main{
+    margin-left: 22%;
+    width: 78%;
+    height: calc(100vh - 65px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Caja principal */
+#principal{
+    width: 100%;
+    height: 100%;
+}
+
+#principal > article{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Formulario */
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Caja de datos */
+fieldset{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 3px #8B5CF6 double;
+    background-color: #291B35;
+    padding: 25px;
+}
+
+legend{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #F97316;
+    text-align: center;
+}
+
+label{
+    font-weight: bolder;
+    margin: 10px;
+    color: #FDBA74;
+}
+
+
+/* Nombre y usuario */
+#datos{
+    display: flex;
+    flex-direction: row;
+}
+
+#datos article{
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+}
+
+
+/* Campos */
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #1A1423;
+    color: #F5F3FF;
+    border: 2px solid #8B5CF6;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    border-color: #F97316;
+}
+
+
+/* Botón */
+#boton{
+    background-color: #F97316;
+    color: #1A1423;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#boton:hover{
+    background-color: #8B5CF6;
+    color: #F5F3FF;
+}
+
+
+/* Footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #291B35;
+    color: #F5F3FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+
+footer p{
+    margin: 0;
+}
