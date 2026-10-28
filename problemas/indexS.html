@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Ejercicio</title>
+</head>
+<body>
+   <header>
+        <h1>Pagina principal Arreglos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="indexM.html">Ejercicio 1</a>
+            <a href ="indexA.html">Ejercicio 2</a>
+            <a href="indexS.html">Ejercicio 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Ejercicio de Sueldos</h2>
+
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Puesto</th>
+                            <th>Newbie</th>
+                            <th>Junior</th>
+                            <th>Senior</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diseñador</td>
+                            <td>$120</td>
+                            <td>$180</td>
+                            <td>$280</td>
+                        </tr>
+                        <tr>
+                            <td>Programador</td>
+                            <td>$120</td>
+                            <td>$280</td>
+                            <td>$340</td>
+                        </tr>
+                        <tr>
+                            <td>Lider</td>
+                            <td>$240</td>
+                            <td>$520</td>
+                            <td>$890</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>Calcular sueldo</h3>
+
+                <label for="puesto">Puesto:</label>
+                <select id="puesto" onchange="calcularTotal()">
+                    <option value="">Selecciona un puesto</option>
+                    <option value="0">Diseñador</option>
+                    <option value="1">Programador</option>
+                    <option value="2">Lider</option>
+                </select>
+                <br><br>
+
+                <label for="nivel">Nivel:</label>
+                <select id="nivel" onchange="calcularTotal()">
+                    <option value="">Selecciona un nivel</option>
+                    <option value="0">Newbie</option>
+                    <option value="1">Junior</option>
+                    <option value="2">Senior</option>
+                </select>
+                <br><br>
+
+                <label for="horas">Horas trabajadas:</label>
+                <input type="number" id="horas" onchange="calcularTotal()">
+                <br><br>
+
+                <label for="total">Sueldo total:</label>
+                <input type="text" id="total" readonly>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/sueldos.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moridos</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro de moridos</h1>
+        <p>Capturar los moridos del día</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Pagina principal Arreglos</a></li>
+                <li><a href="indexM.html">1_Ejercicio</a></li>
+                <li><a href="indexA.html">2_Ejercicio</a></li>
+                <li><a href="indexS.html">3_Ejercicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h3>Capturar muertes</h3>
+
+                <form>
+                    <label for="n1">Día 1</label>
+                    <input type="number" id="n1"><br><br>
+
+                    <label for="n2">Día 2</label>
+                    <input type="number" id="n2"><br><br>
+
+                    <label for="n3">Día 3</label>
+                    <input type="number" id="n3"><br><br>
+
+                    <label for="n4">Día 4</label>
+                    <input type="number" id="n4"><br><br>
+
+                    <label for="n5">Día 5</label>
+                    <input type="number" id="n5"><br><br>
+
+                    <label for="n6">Día 6</label>
+                    <input type="number" id="n6"><br><br>
+
+                    <label for="n7">Día 7</label>
+                    <input type="number" id="n7"><br><br>
+
+                    <button type="button" onclick="calcular()">
+                        Calcular
+                    </button>
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Notas registradas</h2>
+                <p id="impreso"></p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Resultados</h2>
+                <p id="resultado"></p>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/moridos.js"></script>
+
+</body>
+</html>

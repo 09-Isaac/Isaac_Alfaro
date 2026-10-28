@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 2 - Arreglos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Pagina principal Arreglos</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Pagina principal</a></li>
+                <li><a href="indexM.html">1_Ejercicio</a></li>
+                <li><a href="indexA.html">2_Ejercicio</a></li>
+                <li><a href="indexS.html">3_Ejercicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Ejercicio 2: Arreglos</h2>
+
+                <p>Capturar alumno (máximo 10):</p>
+                <input type="text" id="txtNombre">
+                <button type="button" onclick="agregarAlumno()">Agregar</button>
+
+                <br><br>
+
+                <p>Eliminar un alumno:</p>
+                <input type="text" id="txtEliminar">
+                <button type="button" onclick="eliminarAlumno()">Eliminar</button>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>Arreglo Inicial:</h3>
+                <ul id="listaInicial"></ul>
+            </article>
+
+            <article>
+                <h3>Arreglo Final:</h3>
+                <ul id="listaFinal"></ul>
+            </article>
+        </section>
+    </main>
+    <script src="js/alumnos.js"></script>
+
+</body>
+</html>
